@@ -9,10 +9,9 @@ jobs:
   triage:
     runs-on: ubuntu-latest
     steps:
-    # - uses: github/issue-labeler@v2.0
-    - uses: superbrothers/issue-labeler@release/include-title
+    - uses: github/issue-labeler@v2.5
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
         configuration-path: .github/labeler.yml
         enable-versioned-regex: 0
-        # include-title: 1
+        include-title: 1
